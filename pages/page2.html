@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap" rel="stylesheet"> 
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <title>Peckish?</title>
+  </head>
+
+  <header>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <i class="fas fa-utensils" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"></i>
+          Peckish?
+        </a>
+      </div>
+    </nav>
+    <div class="nav-bar">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="./page1.html">Sweet</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./page2.html">Savoury</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <body>
+    <div class="intro-text">
+      If you're after something savoury, we've got lots of tasty recipes below. 
+      <p>Love a recipe? Let us know by clicking the heart!</p>
+    </div>
+    <div class="container">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <img src="../img/chillipopcorn.jpeg" height="200" alt="Chilli popcorn">
+              <h2>Chilli popcorn</h2>
+              <p>Add mixed spice, chilli and black pepper to your standard microwave popcorn for a fuss-free, filling snack. It's a great, grown-up option for movie nights
+              </p>
+              </button>
+              <div class="heart">
+                <i onclick="toggleLike(this)" class="far fa-heart"></i>
+              </div>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="container text-left">
+                <div class="row">
+                  <div class="col">
+                  <strong>Ingredients</strong> 
+                    <ul>  
+                      <li>1 pouch natural microwave popcorn or 100g popcorn kernels</li>
+                      <li>1 tsp chilli flakes</li>
+                      <li>1 tsp cracked black pepper</li>
+                      <li>2 tsp mixed spice</li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <strong>Method</strong>
+                    <ol>
+                    <li>Heat oven to 200C/180C fan/gas 6. Pop the natural microwave popcorn pouch (or popcorn kernels) following pack instructions.</li>
+                    <li>Meanwhile, mix together chilli flakes, cracked black pepper and mixed spice. Toss the popcorn with the spice mix, then tip onto a large baking tray and place in the oven for 5 mins until the corn is crisp and the spices are fragrant.</li>
+                    <li>Sprinkle with a pinch of salt and eat warm or once cooled. Will keep in an airtight container for up to a week.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <img src="../img/avto.jpeg" height="200" alt="Smashed avocado on toast">
+              <h2>Smashed avocado on toast</h2>
+              <p>Make this simple speedy breakfast with just a handful of ingredients. Our avocado toast uses crusty sourdough bread and a pinch of chilli for a kick</p>
+            </button>
+            <div class="heart">
+              <i onclick="toggleLike(this)" class="far fa-heart"></i>
+            </div>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="container text-left">
+                <div class="row">
+                  <div class="col">
+                    <strong>Ingredients</strong> 
+                    <ul>
+                      <li>1 ripe avocado</li>
+                      <li>½ lemon</li>
+                      <li>Big pinch chilli flakes</li>
+                      <li>2 slices sourdough bread</li>
+                      <li>Good drizzle extra virgin olive oil</li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <strong>Method</strong>
+                    <ol>
+                      <li>Cut the avocado in half and carefully remove its stone, then scoop out the flesh into a bowl.</li>
+                      <li>Squeeze in the lemon juice then mash with a fork to your desired texture.</li>
+                      <li>Season to taste with sea salt, black pepper and chilli flakes.</li>
+                      <li>Toast your bread, drizzle over the oil then pile the avocado on top.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <img src="../img/tuna.jpg" height="200" alt="Cheesy tuna melt">
+              <h2>Cheesy tuna melt</h2>
+              <p>A tasty change from cheese on toast.</p>
+            </button>
+            <div class="heart">
+              <i onclick="toggleLike(this)" class="far fa-heart"></i>
+            </div>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="container text-left">
+                <div class="row">
+                  <div class="col">
+                  <strong>Ingredients</strong>
+                    <ul>       
+                      <li>Can tuna , whatever type you've got in the cupboard</li>
+                      <li>½ a bunch of spring onions , finely chopped</li>
+                      <li>4 tbsp mayonnaise</li>
+                      <li>3 thick slices of granary or wholemeal bread</li>
+                      <li>50g cheddar , coarsely grated</li>
+                      <li>Generous pinch of paprika</li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <strong>Method</strong>
+                    <ol>
+                      <li>Preheat the grill on its highest setting. Drain the tuna, flake it into a bowl and mix with the spring onions and mayonnaise. Season with salt and plenty of freshly ground black pepper.</li>
+                      <li>Toast the bread under the grill until it’s nicely browned on both sides, then spread the tuna mixture on top, right up to the edges of the toast. Scatter over the cheese and put back under the grill until the cheese is bubbling.</li>
+                      <li>Slice in half, sprinkle with paprika and tuck in.</li>
+                    </ol>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<footer>
+    <a href="https://twitter.com" target="_blank">
+        <span class="social-icon"><i class="fab fa-twitter"></i></span>
+      </a>
+      <a href="https://facebook.com" target="_blank">
+        <span class="social-icon"><i class="fab fa-facebook"></i></span>
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <span class="social-icon"><i class="fab fa-instagram"></i></span>
+      </a>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <script src="../js/main.js"></script>
+
+</body>
+</html>
